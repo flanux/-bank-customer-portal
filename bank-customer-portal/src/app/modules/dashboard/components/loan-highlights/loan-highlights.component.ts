@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./loan-highlights.component.scss']
 })
 
-export class LoanHighLightsComponent {
+export class LoanHighlightsComponent {
     loans = [
         {name: 'home loan', nextEMI: 15000}, 
         {name: 'Education Loan', nextEMI: 5000}
