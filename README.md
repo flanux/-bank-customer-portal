@@ -1,4 +1,4 @@
-# Flanux Bank - Customer Portal
+# Bank - Customer Portal
 
 ## Installation
 ```bash
