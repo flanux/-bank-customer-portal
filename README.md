@@ -1,56 +1,17 @@
-# Customer Portal - Public Facing
+# Flanux Bank - Customer Portal
 
-**Repo**: `flanux/customer-portal`  
-**Access**: Public Internet  
-**URL**: https://online.flanuxbank.com  
-
-## Quick Start
-
+## Installation
 ```bash
 npm install
-npm start
+npm run dev
 ```
 
-Runs on port 3000.
-
-## Environment Setup
-
-```bash
-cp .env.example .env
-```
-
-Edit `.env`:
-```
-REACT_APP_API_URL=https://api.flanuxbank.com/customer
-```
-
-## Build for Production
-
+## Build
 ```bash
 npm run build
 ```
 
-Deploy `build/` folder to AWS S3 + CloudFront.
-
-## Security
-
-- Only accesses customer-owned data
-- Rate limited: 100 req/min per user
-- WAF protected
-- DDoS mitigation via CloudFront
-
-## API Restrictions
-
-Can ONLY call:
-- `/auth/login`
-- `/accounts/my`
-- `/transactions/my`
-- `/transfers` (own accounts)
-- `/loans/my`
-- `/cards/my`
-
-CANNOT access:
-- Admin endpoints
-- Other customers' data
-- Branch operations
-- Compliance tools
+## Docker
+```bash
+docker-compose up
+```
